@@ -41,4 +41,3 @@ vim.opt.wildignore = {'*.docx','*.jpg','*.png','*.gif','*.pdf','*.pyc','*.exe','
 
 -- Primeagen 0 to LSP
 require("hobbymath")
-print("hello")
