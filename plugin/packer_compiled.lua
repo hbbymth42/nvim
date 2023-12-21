@@ -79,6 +79,12 @@ _G.packer_plugins = {
     path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["aura-theme"] = {
+    config = { "\27LJ\2\2H\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0)colorscheme aura-soft-dark-soft-text\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim",
+    url = "https://github.com/daltonmenezes/aura-theme"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -134,12 +140,6 @@ _G.packer_plugins = {
     path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -158,10 +158,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Runtimepath customization
+time([[Runtimepath customization]], true)
+vim.o.runtimepath = vim.o.runtimepath .. ",/home/hobbymath42/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim"
+time([[Runtimepath customization]], false)
+-- Config for: aura-theme
+time([[Config for aura-theme]], true)
+try_loadstring("\27LJ\2\2H\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0)colorscheme aura-soft-dark-soft-text\bcmd\bvim\0", "config", "aura-theme")
+time([[Config for aura-theme]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

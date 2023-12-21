@@ -13,14 +13,14 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
-      'rose-pine/neovim', 
-      as = 'rose-pine',
+  use {
+      'daltonmenezes/aura-theme',
+      rtp = 'packages/neovim',
       config = function()
-                vim.cmd('colorscheme rose-pine')
+          vim.cmd("colorscheme aura-soft-dark-soft-text") -- Or any Aura theme available
       end
-  })
-
+  }
+  
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
