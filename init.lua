@@ -37,3 +37,8 @@ vim.opt.wildmenu = true
 vim.opt.wildmode = 'list:longest'
 -- Wildmenu will ignore files with the below extensions.
 vim.opt.wildignore = {'*.docx','*.jpg','*.png','*.gif','*.pdf','*.pyc','*.exe','*.flv','*.img','*.xlsx'}
+
+
+-- Primeagen 0 to LSP
+require("hobbymath")
+print("hello")
