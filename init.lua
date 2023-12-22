@@ -38,6 +38,20 @@ vim.opt.wildmode = 'list:longest'
 -- Wildmenu will ignore files with the below extensions.
 vim.opt.wildignore = {'*.docx','*.jpg','*.png','*.gif','*.pdf','*.pyc','*.exe','*.flv','*.img','*.xlsx'}
 
+-- File Templates Setup
+local templates = vim.api.nvim_create_augroup('skeletons', {clear=false})
+-- HTML Template
+vim.api.nvim_create_autocmd({'BufNewFile'}, {
+    pattern = '*.html',
+    group = templates,
+    command = '0r ~/.config/nvim/skeletons/skeleton.html',
+})
+-- C Template
+vim.api.nvim_create_autocmd({'BufNewFile'}, {
+    pattern = '*.c',
+    group = templates,
+    command = '0r ~/.config/nvim/skeletons/skeleton.c',
+})
 
 -- Primeagen 0 to LSP
 require("hobbymath")
