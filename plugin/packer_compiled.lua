@@ -80,7 +80,7 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["aura-theme"] = {
-    config = { "\27LJ\2\2H\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0)colorscheme aura-soft-dark-soft-text\bcmd\bvim\0" },
+    config = { "\27LJ\2\2÷\1\0\0\4\0\v\0\0266\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\t\0005\3\n\0B\0\4\1K\0\1\0\1\0\1\afg\f#edecee\16LineNrBelow\1\0\3\abg\f#15141b\afg\f#edecee\tbold\2\vLineNr\1\0\1\afg\f#edecee\16LineNrAbove\16nvim_set_hl\bapi\26colorscheme aura-dark\bcmd\bvim\0" },
     loaded = true,
     path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim",
     url = "https://github.com/daltonmenezes/aura-theme"
@@ -164,7 +164,7 @@ vim.o.runtimepath = vim.o.runtimepath .. ",/home/hobbymath42/.local/share/nvim/s
 time([[Runtimepath customization]], false)
 -- Config for: aura-theme
 time([[Config for aura-theme]], true)
-try_loadstring("\27LJ\2\2H\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0)colorscheme aura-soft-dark-soft-text\bcmd\bvim\0", "config", "aura-theme")
+try_loadstring("\27LJ\2\2÷\1\0\0\4\0\v\0\0266\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\t\0005\3\n\0B\0\4\1K\0\1\0\1\0\1\afg\f#edecee\16LineNrBelow\1\0\3\abg\f#15141b\afg\f#edecee\tbold\2\vLineNr\1\0\1\afg\f#edecee\16LineNrAbove\16nvim_set_hl\bapi\26colorscheme aura-dark\bcmd\bvim\0", "config", "aura-theme")
 time([[Config for aura-theme]], false)
 
 _G._packer.inside_compile = false

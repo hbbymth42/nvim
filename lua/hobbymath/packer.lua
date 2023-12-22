@@ -17,7 +17,10 @@ return require('packer').startup(function(use)
       'daltonmenezes/aura-theme',
       rtp = 'packages/neovim',
       config = function()
-          vim.cmd("colorscheme aura-soft-dark-soft-text") -- Or any Aura theme available
+          vim.cmd("colorscheme aura-dark") -- Or any Aura theme available
+          vim.api.nvim_set_hl(0, 'LineNrAbove', {fg='#edecee'})
+          vim.api.nvim_set_hl(0, 'LineNr', {fg='#edecee', bg='#15141b', bold=true})
+          vim.api.nvim_set_hl(0, 'LineNrBelow', {fg='#edecee'})
       end
   }
   
