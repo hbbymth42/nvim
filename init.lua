@@ -27,8 +27,8 @@ vim.opt.smartcase = true
 vim.opt.showcmd = true
 -- Show the mode you are on the last line.
 vim.opt.showmode = true
--- Show matching words during a search.
-vim.opt.hlsearch = true
+-- Do not show matching words during a search.
+vim.opt.hlsearch = false
 -- Set commands to save in history.
 vim.opt.history = 1000
 -- Enable auto completion menu after pressing TAB.
