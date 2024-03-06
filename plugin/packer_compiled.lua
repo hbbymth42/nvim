@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/hm42/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/hm42/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/hm42/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/hm42/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/hm42/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/hobbymath42/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/hobbymath42/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/hobbymath42/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/hobbymath42/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/hobbymath42/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,83 +76,83 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["aura-theme"] = {
     config = { "\27LJ\2\2÷\1\0\0\4\0\v\0\0266\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\t\0005\3\n\0B\0\4\1K\0\1\0\1\0\1\afg\f#edecee\16LineNrBelow\1\0\3\abg\f#15141b\afg\f#edecee\tbold\2\vLineNr\1\0\1\afg\f#edecee\16LineNrAbove\16nvim_set_hl\bapi\26colorscheme aura-dark\bcmd\bvim\0" },
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim",
     url = "https://github.com/daltonmenezes/aura-theme"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   harpoon = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/playground",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/hm42/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/home/hobbymath42/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   }
 }
@@ -160,7 +160,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Runtimepath customization
 time([[Runtimepath customization]], true)
-vim.o.runtimepath = vim.o.runtimepath .. ",/home/hm42/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim"
+vim.o.runtimepath = vim.o.runtimepath .. ",/home/hobbymath42/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim"
 time([[Runtimepath customization]], false)
 -- Config for: aura-theme
 time([[Config for aura-theme]], true)

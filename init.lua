@@ -37,7 +37,8 @@ vim.opt.wildmenu = true
 vim.opt.wildmode = 'list:longest'
 -- Wildmenu will ignore files with the below extensions.
 vim.opt.wildignore = {'*.docx','*.jpg','*.png','*.gif','*.pdf','*.pyc','*.exe','*.flv','*.img','*.xlsx'}
-
+-- Disable swapfile creation
+vim.opt.swapfile = false
 -- File Templates Setup
 local templates = vim.api.nvim_create_augroup('skeletons', {clear=false})
 -- HTML Template
