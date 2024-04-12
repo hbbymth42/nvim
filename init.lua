@@ -39,6 +39,8 @@ vim.opt.wildmode = 'list:longest'
 vim.opt.wildignore = {'*.docx','*.jpg','*.png','*.gif','*.pdf','*.pyc','*.exe','*.flv','*.img','*.xlsx'}
 -- Disable swapfile creation
 vim.opt.swapfile = false
+-- Configure system clipboard
+vim.opt.clipboard = "unnamedplus"
 -- File Templates Setup
 local templates = vim.api.nvim_create_augroup('skeletons', {clear=false})
 -- HTML Template
